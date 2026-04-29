@@ -1321,6 +1321,14 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .faq-layout{grid-template-columns:1fr;gap:40px;padding:0 24px;}
   .faq-left{position:static;}
   .pkg-section-intro{grid-template-columns:1fr;gap:24px;}
+  
+  /* Better mobile card sizing */
+  .bc-title{font-size:18px !important;}
+  .bc1 .bc-title{font-size:24px !important;}
+  .bc-stats{flex-direction:column;gap:8px;}
+  .bc-stat{padding:8px 12px;}
+  .bcs-n{font-size:14px;}
+  .bcs-l{font-size:7px;}
 }
 @media(max-width:640px){
   nav{padding:0 16px;}
@@ -1333,6 +1341,56 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .scroll-hint{display:none;}
   .svc-card{padding:40px 32px;}
   .pkg-card{padding:40px 32px;}
+  
+  /* Mobile specific fixes */
+  .wrap,.svc-inner,.bento-grid,.full-bento{padding-left:16px;padding-right:16px;}
+  .work-hero,.pg-hero,.about-hero,.contact-hero,.contact-body,.foot-inner{padding-left:16px;padding-right:16px;}
+  .hero-sub{font-size:14px;max-width:100%;}
+  .body-t{font-size:14px;}
+  .h-lg{font-size:clamp(32px,8vw,48px);}
+  .h-xl{font-size:clamp(40px,10vw,64px);}
+  
+  /* Better button sizing */
+  .btn-v,.btn-g{padding:14px 24px;font-size:12px;}
+  
+  /* Card improvements */
+  .bc-info{padding:20px;}
+  .bc-title{font-size:16px !important;}
+  .bc1 .bc-title{font-size:20px !important;}
+  .bc-cat{font-size:8px;}
+  .bc-stats{top:16px;left:16px;flex-direction:column;gap:6px;}
+  .bc-stat{padding:8px 10px;}
+  .bcs-n{font-size:12px;}
+  .bcs-l{font-size:6px;}
+  .bc-arrow{width:32px;height:32px;font-size:12px;top:16px;right:16px;}
+  
+  /* Team cards */
+  .tc-info{padding:20px;}
+  .tc-name{font-size:18px;}
+  .tc-bio{font-size:13px;}
+  
+  /* Service cards */
+  .svc-card{padding:32px 24px;}
+  .sc-title{font-size:20px;}
+  
+  /* Footer */
+  .foot-logo{font-size:16px;}
+  .foot-desc{font-size:12px;}
+  
+  /* Work filter bar */
+  .work-filter-bar{padding:16px;flex-wrap:wrap;}
+  .wfb{font-size:9px;padding:8px 12px;}
+  
+  /* Process section */
+  .pstep{padding:28px 24px;}
+  .pstep-title{font-size:18px;}
+  
+  /* Testimonials */
+  .testi-quote{font-size:14px;}
+  
+  /* Package cards */
+  .pkg-name{font-size:20px;}
+  .pkg-price{font-size:32px;}
 }
 </style>
 </head>

@@ -1292,11 +1292,17 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
    RESPONSIVE
 ═══════════════════════════════════ */
 @media(max-width:1024px){
-  nav{padding:0 24px;}
+  nav{padding:0 24px;height:64px;}
   .nav-pills{display:none;}
   .ham{display:flex;}
+  .logo{font-size:15px;}
+  .logo-mark{width:28px;height:28px;}
+  .logo-mark::before{font-size:12px;}
+  .nav-cta{font-size:10px;padding:9px 18px;}
+  .theme-toggle{width:36px;height:36px;font-size:14px;}
+  
   .wrap,.svc-inner,.bento-grid,.full-bento,.work-filter-bar,.work-hero,.pg-hero,.about-hero,.contact-hero,.contact-body,.foot-inner,.work-bento-s .section-header{padding-left:24px;padding-right:24px;}
-  .hero-main{grid-template-columns:1fr;gap:40px;padding:60px 24px 40px;}
+  .hero-main{grid-template-columns:1fr;gap:40px;padding:60px 24px 40px;margin-top:64px;}
   .hero-stat-panel{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-radius:16px;}
   .stat-cell{padding:20px 24px;}
   .hero-headline{font-size:clamp(56px,12vw,120px);}
@@ -1316,7 +1322,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .fb2,.fb3,.fb4,.fb5,.fb6{grid-column:span 6;}
   .process-grid{grid-template-columns:1fr;}
   .process-left{position:static;}
-  .bento-grid{padding:0 24px;}
+  .bento-grid{padding:0 24px;margin-top:64px;}
   .full-bento{padding:10px 24px;}
   .faq-layout{grid-template-columns:1fr;gap:40px;padding:0 24px;}
   .faq-left{position:static;}
@@ -1329,11 +1335,21 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .bc-stat{padding:8px 12px;}
   .bcs-n{font-size:14px;}
   .bcs-l{font-size:7px;}
+  
+  /* Mobile menu improvements */
+  .mob-menu{top:64px;padding:24px;}
+  .mob-link{font-size:20px;padding:12px 0;}
 }
 @media(max-width:640px){
-  nav{padding:0 16px;}
-  .hero-main{padding:40px 16px 32px;}
-  .hero-headline{font-size:clamp(48px,14vw,88px);}
+  nav{padding:0 16px;height:60px;}
+  .logo{font-size:14px;}
+  .logo-mark{width:26px;height:26px;}
+  .logo-mark::before{font-size:11px;}
+  .nav-cta{font-size:9px;padding:8px 14px;}
+  .theme-toggle{width:32px;height:32px;font-size:13px;}
+  
+  .hero-main{padding:40px 16px 32px;margin-top:60px;}
+  .hero-headline{font-size:clamp(40px,12vw,72px);line-height:1.05;}
   .nums-grid,.svc-cards-grid,.pkg-grid,.values-grid,.team-grid,.phi-grid,.testi-grid{grid-template-columns:1fr;}
   .foot-grid{grid-template-columns:1fr;}
   .faq-grid{margin:40px 0 0;}
@@ -1345,52 +1361,79 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   /* Mobile specific fixes */
   .wrap,.svc-inner,.bento-grid,.full-bento{padding-left:16px;padding-right:16px;}
   .work-hero,.pg-hero,.about-hero,.contact-hero,.contact-body,.foot-inner{padding-left:16px;padding-right:16px;}
-  .hero-sub{font-size:14px;max-width:100%;}
-  .body-t{font-size:14px;}
-  .h-lg{font-size:clamp(32px,8vw,48px);}
-  .h-xl{font-size:clamp(40px,10vw,64px);}
+  .hero-sub{font-size:14px;max-width:100%;line-height:1.7;}
+  .body-t{font-size:14px;line-height:1.7;}
+  .h-lg{font-size:clamp(28px,7vw,42px);line-height:1.15;}
+  .h-xl{font-size:clamp(36px,9vw,56px);line-height:1.1;}
   
   /* Better button sizing */
-  .btn-v,.btn-g{padding:14px 24px;font-size:12px;}
+  .btn-v,.btn-g{padding:13px 22px;font-size:11px;}
   
   /* Card improvements */
-  .bc-info{padding:20px;}
-  .bc-title{font-size:16px !important;}
-  .bc1 .bc-title{font-size:20px !important;}
-  .bc-cat{font-size:8px;}
-  .bc-stats{top:16px;left:16px;flex-direction:column;gap:6px;}
-  .bc-stat{padding:8px 10px;}
-  .bcs-n{font-size:12px;}
+  .bc-info{padding:18px;}
+  .bc-title{font-size:15px !important;line-height:1.25;}
+  .bc1 .bc-title{font-size:19px !important;}
+  .bc-cat{font-size:7px;margin-bottom:6px;}
+  .bc-stats{top:14px;left:14px;flex-direction:column;gap:6px;}
+  .bc-stat{padding:7px 9px;}
+  .bcs-n{font-size:11px;}
   .bcs-l{font-size:6px;}
-  .bc-arrow{width:32px;height:32px;font-size:12px;top:16px;right:16px;}
+  .bc-arrow{width:30px;height:30px;font-size:11px;top:14px;right:14px;}
   
   /* Team cards */
-  .tc-info{padding:20px;}
-  .tc-name{font-size:18px;}
-  .tc-bio{font-size:13px;}
+  .tc-info{padding:18px;}
+  .tc-name{font-size:17px;}
+  .tc-role{font-size:10px;}
+  .tc-bio{font-size:12px;line-height:1.6;}
+  .tc-partner-badge{font-size:9px;padding:6px 10px;}
   
   /* Service cards */
-  .svc-card{padding:32px 24px;}
-  .sc-title{font-size:20px;}
+  .svc-card{padding:28px 20px;}
+  .sc-title{font-size:18px;}
+  .sc-desc{font-size:13px;}
   
   /* Footer */
-  .foot-logo{font-size:16px;}
-  .foot-desc{font-size:12px;}
+  .foot-logo{font-size:15px;}
+  .foot-desc{font-size:12px;line-height:1.7;}
+  .foot-title{font-size:12px;}
+  .foot-link{font-size:12px;}
   
   /* Work filter bar */
-  .work-filter-bar{padding:16px;flex-wrap:wrap;}
-  .wfb{font-size:9px;padding:8px 12px;}
+  .work-filter-bar{padding:14px 16px;flex-wrap:wrap;gap:6px;}
+  .wfb{font-size:8px;padding:7px 11px;}
   
   /* Process section */
-  .pstep{padding:28px 24px;}
-  .pstep-title{font-size:18px;}
+  .pstep{padding:24px 20px;}
+  .pstep-title{font-size:17px;}
+  .pstep-desc{font-size:13px;}
+  .pstep-tag{font-size:9px;}
   
   /* Testimonials */
-  .testi-quote{font-size:14px;}
+  .testi-quote{font-size:13px;line-height:1.6;}
+  .testi-author-name{font-size:13px;}
+  .testi-author-role{font-size:11px;}
   
   /* Package cards */
-  .pkg-name{font-size:20px;}
-  .pkg-price{font-size:32px;}
+  .pkg-name{font-size:19px;}
+  .pkg-price{font-size:30px;}
+  .pkg-desc{font-size:12px;}
+  .pf-item{font-size:12px;}
+  
+  /* Mobile menu improvements */
+  .mob-menu{top:60px;padding:20px 16px 28px;}
+  .mob-link{font-size:18px;padding:11px 0;}
+  .mob-cta{margin-top:20px;}
+  
+  /* Stats panel */
+  .stat-num{font-size:32px;}
+  .stat-label{font-size:10px;}
+  
+  /* Chip */
+  .chip{font-size:9px;padding:6px 12px;}
+  
+  /* Section spacing */
+  .work-hero,.pg-hero,.about-hero,.contact-hero{padding-top:100px;padding-bottom:50px;}
+  .bento-grid{margin-top:60px;padding-top:20px;}
 }
 </style>
 </head>

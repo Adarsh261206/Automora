@@ -345,9 +345,13 @@ nav{
 .nav-left,.nav-center,.nav-right{position:relative;z-index:1;display:flex;align-items:center;}
 .nav-right{gap:10px;}
 .logo{
-  display:flex;align-items:center;gap:10px;
-  font-family:var(--syne);font-size:17px;font-weight:800;letter-spacing:-.02em;
-  color:var(--smoke);
+  display:flex;align-items:center;
+  cursor:pointer;
+}
+.logo-img{
+  height:40px;
+  width:auto;
+  display:block;
 }
 .logo-mark{
   width:32px;height:32px;border-radius:8px;
@@ -1311,7 +1315,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .nav-pills{display:none;}
   .ham{display:flex !important;}
   .nav-cta{display:none;}
-  .logo{font-size:15px;}
+  .logo-img{height:36px;}
   .logo-mark{width:28px;height:28px;}
   .logo-mark::before{font-size:12px;}
   .theme-toggle{width:36px;height:36px;font-size:14px;}
@@ -1364,7 +1368,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   nav{padding:0 16px;height:60px;}
   .ham{display:flex !important;}
   .nav-cta{display:none;}
-  .logo{font-size:14px;}
+  .logo-img{height:32px;}
   .logo-mark{width:26px;height:26px;}
   .logo-mark::before{font-size:11px;}
   .theme-toggle{width:32px;height:32px;font-size:13px;}
@@ -1488,8 +1492,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   <div class="nav-blur"></div>
   <div class="nav-left">
     <div class="logo">
-      <div class="logo-mark"></div>
-      Automora
+      <img src="images/Logo.png" alt="Automora" class="logo-img">
     </div>
   </div>
   <div class="nav-center">

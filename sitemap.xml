@@ -12,6 +12,30 @@
       <image:loc>https://www.automoratechsolutions.com/images/Logo.png</image:loc>
       <image:title>Automora Tech Solutions Logo</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://www.automoratechsolutions.com/images/dcards.png</image:loc>
+      <image:title>Digital Cards Academy Project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.automoratechsolutions.com/images/trupti.png</image:loc>
+      <image:title>Trupti Enterprises Project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.automoratechsolutions.com/images/zealous.png</image:loc>
+      <image:title>Zealous Remedies Project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.automoratechsolutions.com/images/aastha.png</image:loc>
+      <image:title>Aastha Yoga Project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.automoratechsolutions.com/images/spfinsure.png</image:loc>
+      <image:title>SPF Insure Project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.automoratechsolutions.com/images/sadguru.png</image:loc>
+      <image:title>Shree Sadguru Dental Project</image:title>
+    </image:image>
   </url>
 
   <!-- Services Page -->
@@ -44,49 +68,6 @@
     <lastmod>2025-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Project Pages -->
-  <url>
-    <loc>https://dcards.academy.gptechglobal.com/</loc>
-    <lastmod>2025-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.truptienterprises.org/</loc>
-    <lastmod>2025-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://zealousremedies.vercel.app/</loc>
-    <lastmod>2024-12-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://aastha-yoga.vercel.app/</loc>
-    <lastmod>2024-12-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://spfinsure.com/</loc>
-    <lastmod>2024-12-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://shreesadgurudental.com/</loc>
-    <lastmod>2024-12-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 
 </urlset>

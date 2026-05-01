@@ -1,0 +1,36 @@
+# Robots.txt for Automora Tech Solutions
+# https://www.automoratechsolutions.com
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /*.css
+Allow: /*.js
+
+# Disallow admin or private areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://www.automoratechsolutions.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

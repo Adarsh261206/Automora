@@ -1701,11 +1701,11 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
       <!-- Right stat panel -->
       <div class="hero-stat-panel rv d1">
         <div class="stat-cell">
-          <div class="stat-n"><span class="count" data-target="12">0</span><sup>+</sup></div>
+          <div class="stat-n"><span class="count" data-target="30">0</span><sup>+</sup></div>
           <div class="stat-l">Websites Shipped</div>
         </div>
         <div class="stat-cell">
-          <div class="stat-n"><span class="count" data-target="8">0</span><sup>+</sup></div>
+          <div class="stat-n"><span class="count" data-target="32">0</span><sup>+</sup></div>
           <div class="stat-l">Clients Served</div>
         </div>
         <div class="stat-cell">
@@ -1713,7 +1713,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
           <div class="stat-l">AI Bots Live</div>
         </div>
         <div class="stat-cell">
-          <div class="stat-n"><span class="count" data-target="100">0</span><sup>%</sup></div>
+          <div class="stat-n"><span class="count" data-target="99.99">0</span><sup>%</sup></div>
           <div class="stat-l">Client Satisfaction</div>
         </div>
         <div class="stat-panel-cta">🟢 Free strategy call available this week</div>
@@ -2693,17 +2693,24 @@ bindHover();
 
 /* ── ANIMATED COUNTER ── */
 function animateCounter(el){
-  const target=parseInt(el.dataset.target);
+  const target=parseFloat(el.dataset.target);
+  const isDecimal=el.dataset.target.includes('.');
   const suffix=el.dataset.suffix||'';
   const duration=1800;
   const start=performance.now();
   function update(now){
     const p=Math.min((now-start)/duration,1);
     const ease=1-Math.pow(1-p,4);
-    const val=Math.round(ease*target);
+    let val=ease*target;
+    if(isDecimal){
+      val=val.toFixed(2);
+      if(parseFloat(val) > target) val=target.toFixed(2);
+    } else {
+      val=Math.round(val);
+    }
     el.textContent=val+suffix;
     if(p<1)requestAnimationFrame(update);
-    else el.textContent=target+suffix;
+    else el.textContent=(isDecimal?target.toFixed(2):target)+suffix;
   }
   requestAnimationFrame(update);
 }

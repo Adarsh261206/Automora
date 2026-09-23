@@ -33,10 +33,6 @@
 <meta name="twitter:description" content="Leading digital agency in Mumbai specializing in AI automation, custom web development, SEO optimization, and growth systems.">
 <meta name="twitter:image" content="https://www.automoratechsolutions.com/images/Logo.png">
 
-<!-- Motion System CSS -->
-<link rel="stylesheet" href="css/motion.css">
-<link rel="stylesheet" href="css/hero-rebuilt.css">
-
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/images/Logo copy.png">
 <link rel="apple-touch-icon" href="/images/Logo copy.png">
@@ -1624,9 +1620,6 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
 </head>
 <body>
 
-<!-- Global Motion Background Layer -->
-<div id="global-bg"></div>
-
 <!-- CURSOR -->
 <div id="c-dot"></div>
 <div id="c-ring"></div>
@@ -1676,140 +1669,84 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
      ╚══════════════════════════════════════╝ -->
 <div id="page-home" class="page on">
 
-  <!-- ═══════════════════════════════════════════════════════════
-       HERO SECTION — COMPLETELY REBUILT (MotionSites Level)
-       ═══════════════════════════════════════════════════════════ -->
-  <section class="hero-rebuilt">
-    
-    <!-- FULL-WIDTH LIVE ANIMATED BACKGROUND -->
-    <div class="hero-bg-system">
-      <div class="hero-bg-gradient-1"></div>
-      <div class="hero-bg-gradient-2"></div>
-      <div class="hero-bg-gradient-3"></div>
-      <div class="hero-bg-noise"></div>
-      <div class="hero-bg-overlay"></div>
-    </div>
-
-    <!-- HERO CONTENT CONTAINER -->
-    <div class="hero-container">
-      
-      <!-- LEFT SIDE: CONTENT -->
-      <div class="hero-left">
-        
-        <!-- Badge -->
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          <span class="badge-text">Available for New Projects</span>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-blob"></div>
+    <div class="hero-blob2"></div>
+    <div class="hero-main">
+      <!-- Left -->
+      <div>
+        <div class="status-pill">
+          <div class="s-pulse"></div>
+          Available for New Projects · Mumbai, India
         </div>
-
-        <!-- Dramatic Typography -->
-        <h1 class="hero-title">
-          <span class="hero-title-line">
-            <span class="hero-word">We Build</span>
-          </span>
-          <span class="hero-title-line">
-            <span class="hero-word hero-word-highlight">High-Performance</span>
-          </span>
-          <span class="hero-title-line">
-            <span class="hero-word">Digital Systems</span>
-          </span>
-          <span class="hero-title-line">
-            <span class="hero-word hero-word-accent">That Scale Your Business</span>
-          </span>
+        <div class="hero-t1">Automora Digital Studio</div>
+        <h1 class="hero-headline">
+          <div class="line-rv"><span class="w1">We craft</span></div>
+          <div class="line-rv"><span class="w2">digital worlds</span></div>
+          <div class="line-rv"><span class="w3">that convert.</span></div>
         </h1>
-
-        <!-- Subtext -->
-        <p class="hero-subtitle">
-          From modern websites to automation-driven platforms — we help startups and businesses grow faster with technology.
-        </p>
-
-        <!-- CTAs -->
-        <div class="hero-ctas">
-          <button class="hero-cta-primary" onclick="go('contact',null)">
-            <span class="cta-glow-effect"></span>
-            <span class="cta-text">Book a Free Strategy Call</span>
-            <span class="cta-arrow">→</span>
-          </button>
-          <button class="hero-cta-secondary" onclick="go('work',null)">
-            <span class="cta-text">View Our Work</span>
-          </button>
+        <p class="hero-sub">Full-service studio for brands that refuse mediocrity — 3D web, AI automation, and growth systems built to compound.</p>
+        <div class="hero-btns">
+          <button class="btn-v" onclick="go('work',null)">View Our Work</button>
+          <button class="btn-o" onclick="go('services',null)">Our Services</button>
+          <button class="btn-link" onclick="go('contact',null)">Get a Quote →</button>
         </div>
-
-        <!-- Scroll Indicator -->
-        <div class="hero-scroll-indicator">
+        <div class="scroll-hint">
           <div class="scroll-line"></div>
-          <span class="scroll-text">Scroll to explore</span>
+          Scroll to explore
         </div>
-
       </div>
-
-      <!-- RIGHT SIDE: FLOATING UI CARDS -->
-      <div class="hero-right">
-        
-        <!-- Main Dashboard Card -->
-        <div class="hero-card hero-card-main">
-          <div class="card-glow"></div>
-          <div class="card-header">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 3v18h18"/>
-                <path d="M18 17V9"/>
-                <path d="M13 17V5"/>
-                <path d="M8 17v-3"/>
-              </svg>
-            </div>
-            <div class="card-title">Performance Metrics</div>
-          </div>
-          <div class="card-stats">
-            <div class="stat-item">
-              <div class="stat-value">+240%</div>
-              <div class="stat-label">Conversion Rate</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-value">18K</div>
-              <div class="stat-label">Users Reached</div>
-            </div>
-          </div>
-          <div class="card-chart">
-            <div class="chart-bar" style="height: 40%"></div>
-            <div class="chart-bar" style="height: 65%"></div>
-            <div class="chart-bar" style="height: 85%"></div>
-            <div class="chart-bar" style="height: 100%"></div>
-            <div class="chart-bar" style="height: 75%"></div>
-          </div>
+      <!-- Right stat panel -->
+      <div class="hero-stat-panel rv d1">
+        <div class="stat-cell">
+          <div class="stat-n"><span class="count" data-target="12">0</span><sup>+</sup></div>
+          <div class="stat-l">Websites Shipped</div>
         </div>
-
-        <!-- Small Card 1 -->
-        <div class="hero-card hero-card-small hero-card-1">
-          <div class="card-glow"></div>
-          <div class="small-card-icon">✓</div>
-          <div class="small-card-text">30+ Projects Delivered</div>
+        <div class="stat-cell">
+          <div class="stat-n"><span class="count" data-target="8">0</span><sup>+</sup></div>
+          <div class="stat-l">Clients Served</div>
         </div>
-
-        <!-- Small Card 2 -->
-        <div class="hero-card hero-card-small hero-card-2">
-          <div class="card-glow"></div>
-          <div class="small-card-icon">⚡</div>
-          <div class="small-card-text">AI-Powered Automation</div>
+        <div class="stat-cell">
+          <div class="stat-n"><span class="count" data-target="5">0</span><sup>+</sup></div>
+          <div class="stat-l">AI Bots Live</div>
         </div>
-
-        <!-- Small Card 3 -->
-        <div class="hero-card hero-card-small hero-card-3">
-          <div class="card-glow"></div>
-          <div class="small-card-icon">🚀</div>
-          <div class="small-card-text">99.99% Client Satisfaction</div>
+        <div class="stat-cell">
+          <div class="stat-n"><span class="count" data-target="100">0</span><sup>%</sup></div>
+          <div class="stat-l">Client Satisfaction</div>
         </div>
-
+        <div class="stat-panel-cta">🟢 Free strategy call available this week</div>
       </div>
-
     </div>
-
+    <!-- TICKER — Giant Floating Marquee -->
+    <div class="ticker-bar">
+      <div class="ticker-scroll">
+        <div class="ticker-track">
+          <span class="t-item">Web Design<span class="t-sep">•</span></span>
+          <span class="t-item">AI Automation<span class="t-sep">•</span></span>
+          <span class="t-item">WhatsApp Bots<span class="t-sep">•</span></span>
+          <span class="t-item">3D Experiences<span class="t-sep">•</span></span>
+          <span class="t-item">SEO & Growth<span class="t-sep">•</span></span>
+          <span class="t-item">Digital Marketing<span class="t-sep">•</span></span>
+          <span class="t-item">E-Commerce<span class="t-sep">•</span></span>
+          <span class="t-item">Web Apps<span class="t-sep">•</span></span>
+          <span class="t-item">Web Design<span class="t-sep">•</span></span>
+          <span class="t-item">AI Automation<span class="t-sep">•</span></span>
+          <span class="t-item">WhatsApp Bots<span class="t-sep">•</span></span>
+          <span class="t-item">3D Experiences<span class="t-sep">•</span></span>
+          <span class="t-item">SEO & Growth<span class="t-sep">•</span></span>
+          <span class="t-item">Digital Marketing<span class="t-sep">•</span></span>
+          <span class="t-item">E-Commerce<span class="t-sep">•</span></span>
+          <span class="t-item">Web Apps<span class="t-sep">•</span></span>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- END HERO SECTION -->
 
   <!-- TRUST STRIP -->
-  <div class="trust-strip rv" data-animate="fade-up">
-    <div class="trust-label">Trusted by 32+ clients across India & beyond</div>
+  <div class="trust-strip rv">
+    <div class="trust-label">Trusted by brands across India & beyond</div>
     <div class="trust-logos">
       <div class="trust-logo">Digital Cards</div>
       <div class="trust-logo">Aastha Yoga</div>
@@ -1821,17 +1758,17 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   </div>
 
   <!-- WORK BENTO -->
-  <section class="work-bento-s" data-animate="fade-up">
+  <section class="work-bento-s">
     <div class="wrap">
       <div class="section-header rv">
         <div>
-          <div class="chip" style="margin-bottom:12px;">Case Studies</div>
-          <h2 class="h-lg">Real results for <em>real businesses.</em></h2>
+          <div class="chip" style="margin-bottom:12px;">Selected Work</div>
+          <h2 class="h-lg">Recent <em>projects.</em></h2>
         </div>
-        <button class="btn-link" onclick="go('work',null)">View All Case Studies →</button>
+        <button class="btn-link" onclick="go('work',null)">View All Work →</button>
       </div>
       <div class="bento-grid">
-        <a href="https://dcards.academy.gptechglobal.com/" target="_blank" class="bc bc1 bg-a rv" data-animate="scale-in">
+        <a href="https://dcards.academy.gptechglobal.com/" target="_blank" class="bc bc1 bg-a rv">
           <img src="images/dcards.png" alt="Digital Cards Academy - Custom Web Design Project by Automora" loading="lazy" width="800" height="500">
           <div class="bcv"><div class="bc-pattern patt-dots"></div></div>
           <div class="bc-orb" style="background:radial-gradient(ellipse,rgba(212,255,0,.12) 0%,transparent 70%);"></div>
@@ -1845,33 +1782,26 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
           </div>
           <div class="bc-arrow">↗</div>
         </a>
-        <a href="https://www.truptienterprises.org/" target="_blank" class="bc bc2 bg-b rv d1" data-animate="scale-in" class="delay-1">
+        <a href="https://www.truptienterprises.org/" target="_blank" class="bc bc2 bg-b rv d1">
           <img src="images/trupti.png" alt="Trupti Enterprises - Corporate Website Development Mumbai" loading="lazy" width="600" height="450">
           <div class="bcv"><div class="bc-pattern patt-lines"></div></div>
           <div class="bc-orb" style="background:radial-gradient(ellipse,rgba(37,211,102,.1) 0%,transparent 70%);"></div>
-          <div class="bc-stats">
-            <div class="bc-stat"><div class="bcs-n">3x</div><div class="bcs-l">Lead Growth</div></div>
-            <div class="bc-stat"><div class="bcs-n">+180%</div><div class="bcs-l">Traffic</div></div>
-          </div>
           <div class="bc-info">
             <div class="bc-cat">Web Design · Corporate · 2025</div>
             <div class="bc-title">Trupti Enterprises</div>
           </div>
           <div class="bc-arrow">↗</div>
         </a>
-        <a href="https://zealousremedies.vercel.app/" target="_blank" class="bc bc3 bg-c rv d2" data-animate="scale-in" class="delay-2">
+        <a href="https://zealousremedies.vercel.app/" target="_blank" class="bc bc3 bg-c rv d2">
           <img src="images/zealous.png" alt="Zealous Remedies - Healthcare Website Design Portfolio" loading="lazy" width="400" height="400">
           <div class="bcv"><div class="bc-pattern patt-grid"></div></div>
-          <div class="bc-stats">
-            <div class="bc-stat"><div class="bcs-n">+200%</div><div class="bcs-l">Engagement</div></div>
-          </div>
           <div class="bc-info">
             <div class="bc-cat">Web Design · Healthcare · 2024</div>
             <div class="bc-title">Zealous Remedies</div>
           </div>
           <div class="bc-arrow">↗</div>
         </a>
-        <a href="https://aastha-yoga.vercel.app/" target="_blank" class="bc bc4 bg-d rv d3" data-animate="scale-in" class="delay-3">
+        <a href="https://aastha-yoga.vercel.app/" target="_blank" class="bc bc4 bg-d rv d3">
           <img src="images/aastha.png" alt="Aastha Yoga - Wellness Platform Web Development" loading="lazy" width="400" height="400">
           <div class="bcv"></div>
           <div class="bc-orb" style="background:radial-gradient(ellipse,rgba(61,139,255,.1) 0%,transparent 70%);"></div>
@@ -1881,7 +1811,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
           </div>
           <div class="bc-arrow">↗</div>
         </a>
-        <a href="https://spfinsure.com/" target="_blank" class="bc bc5 bg-e rv d4" data-animate="scale-in" class="delay-4">
+        <a href="https://spfinsure.com/" target="_blank" class="bc bc5 bg-e rv d4">
           <img src="images/spfinsure.png" alt="SPF Insure - Insurance Website Design and Development" loading="lazy" width="400" height="400">
           <div class="bcv"><div class="bc-pattern patt-dots"></div></div>
           <div class="bc-orb" style="background:radial-gradient(ellipse,rgba(212,255,0,.08) 0%,transparent 70%);top:auto;bottom:-40px;left:-40px;right:auto;"></div>
@@ -1896,14 +1826,14 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   </section>
 
   <!-- SERVICES ACCORDION -->
-  <section class="svc-s" data-animate="fade-up">
+  <section class="svc-s">
     <div class="svc-inner">
       <div class="svc-top-row rv">
         <div>
           <div class="chip" style="margin-bottom:12px;">What We Do</div>
-          <h2 class="h-lg">Services that <em>drive growth.</em></h2>
+          <h2 class="h-lg">Our <em>services.</em></h2>
         </div>
-        <p class="body-t">We build digital systems that generate revenue, save time, and scale with your business — from high-converting websites to intelligent automation.</p>
+        <p class="body-t">Everything a modern brand needs to grow digitally — from stunning web presence to intelligent automation.</p>
       </div>
       <div class="svc-list rv d1">
         <!-- Web Design -->
@@ -1917,13 +1847,13 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
           <div class="svc-body">
             <div class="svc-body-inner">
               <div>
-                <p class="svc-desc">High-performance websites that convert visitors into customers. We build fast, beautiful, and conversion-optimized sites that make your business money.</p>
+                <p class="svc-desc">We build bespoke websites that don't just look great — they convert visitors into customers. From landing pages to full-scale web apps, every pixel is intentional.</p>
                 <div class="svc-feats">
-                  <div class="svc-feat"><div class="feat-check">✓</div>Conversion-Optimized Design</div>
-                  <div class="svc-feat"><div class="feat-check">✓</div>Lightning-Fast Performance</div>
-                  <div class="svc-feat"><div class="feat-check">✓</div>Mobile-First & Responsive</div>
-                  <div class="svc-feat"><div class="feat-check">✓</div>SEO-Ready Architecture</div>
+                  <div class="svc-feat"><div class="feat-check">✓</div>Custom UI/UX Design</div>
+                  <div class="svc-feat"><div class="feat-check">✓</div>3D & Motion Experiences</div>
                   <div class="svc-feat"><div class="feat-check">✓</div>E-Commerce & Web Apps</div>
+                  <div class="svc-feat"><div class="feat-check">✓</div>Performance Optimized</div>
+                  <div class="svc-feat"><div class="feat-check">✓</div>Mobile-First & Responsive</div>
                 </div>
               </div>
               <div class="svc-visual">
@@ -1959,12 +1889,12 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
           <div class="svc-body">
             <div class="svc-body-inner">
               <div>
-                <p class="svc-desc">AI-powered chatbots that handle customer queries, qualify leads, and book appointments 24/7. Reduce support costs by 70% while improving response time to seconds.</p>
+                <p class="svc-desc">Deploy intelligent chatbots that qualify leads, answer queries, and book appointments — 24/7, without human intervention. Built on GPT-4 and custom-trained on your business.</p>
                 <div class="svc-feats">
-                  <div class="svc-feat"><div class="feat-check">✓</div>24/7 Automated Support</div>
-                  <div class="svc-feat"><div class="feat-check">✓</div>Lead Qualification & Booking</div>
+                  <div class="svc-feat"><div class="feat-check">✓</div>GPT-4 Powered Conversations</div>
+                  <div class="svc-feat"><div class="feat-check">✓</div>Lead Qualification & CRM Sync</div>
                   <div class="svc-feat"><div class="feat-check">✓</div>WhatsApp & Web Integration</div>
-                  <div class="svc-feat"><div class="feat-check">✓</div>Custom-Trained on Your Business</div>
+                  <div class="svc-feat"><div class="feat-check">✓</div>24/7 Automated Support</div>
                 </div>
               </div>
               <div class="svc-visual">
@@ -2054,7 +1984,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   </section>
 
   <!-- NUMBERS -->
-  <section class="nums-s" data-animate="blur-in">
+  <section class="nums-s">
     <div class="wrap">
       <div class="section-header rv">
         <div>
@@ -2064,12 +1994,12 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
       </div>
       <div class="nums-grid rv d1">
         <div class="num-cell">
-          <div class="num-n"><span class="count" data-target="30">0</span><sup>+</sup></div>
+          <div class="num-n"><span class="count" data-target="12">0</span><sup>+</sup></div>
           <div class="num-label">Websites Shipped</div>
           <div class="num-sub">Across India and international clients</div>
         </div>
         <div class="num-cell">
-          <div class="num-n"><span class="count" data-target="32">0</span><sup>+</sup></div>
+          <div class="num-n"><span class="count" data-target="8">0</span><sup>+</sup></div>
           <div class="num-label">Happy Clients</div>
           <div class="num-sub">Brands we've partnered with since day one</div>
         </div>
@@ -2079,7 +2009,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
           <div class="num-sub">Running 24/7, qualifying leads while clients sleep</div>
         </div>
         <div class="num-cell">
-          <div class="num-n"><span class="count" data-target="99.99">0</span><sup>%</sup></div>
+          <div class="num-n"><span class="count" data-target="100">0</span><sup>%</sup></div>
           <div class="num-label">Client Satisfaction</div>
           <div class="num-sub">Every client is a long-term partner to us</div>
         </div>
@@ -2088,47 +2018,47 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   </section>
 
   <!-- PROCESS -->
-  <section class="process-s" data-animate="fade-up">
+  <section class="process-s">
     <div class="wrap">
       <div class="chip rv" style="margin-bottom:12px;">How It Works</div>
       <div class="process-grid">
         <div class="process-left rv">
           <div class="process-tagline">
-            Simple process.<br><em>Powerful</em> results.<br><span class="dim">No complexity.</span>
+            From first call<br>to <em>live</em> product —<br><span class="dim">we move fast.</span>
           </div>
-          <p class="process-desc">Four clear steps from idea to launch. No endless meetings, no agency bloat — just a proven process that delivers results in weeks.</p>
+          <p class="process-desc">No endless back-and-forth. No agency bloat. A clear process that gets your project live in weeks, not months.</p>
           <button class="btn-v" onclick="go('contact',null)">Book a Free Call ↗</button>
         </div>
         <div class="process-right rv d1">
           <div class="pstep">
             <div class="pstep-n">01</div>
             <div>
-              <div class="pstep-title">Discover</div>
-              <div class="pstep-desc">30-minute strategy call to understand your business goals and challenges.</div>
+              <div class="pstep-title">Discovery Call</div>
+              <div class="pstep-desc">We spend 30 minutes understanding your business, goals, and challenges. No sales pitch — just genuine listening.</div>
               <div class="pstep-tag">✦ Free · 30 minutes</div>
             </div>
           </div>
           <div class="pstep">
             <div class="pstep-n">02</div>
             <div>
-              <div class="pstep-title">Design</div>
-              <div class="pstep-desc">Detailed proposal with clear deliverables, timeline, and transparent pricing.</div>
+              <div class="pstep-title">Proposal & Scope</div>
+              <div class="pstep-desc">Within 48 hours, you receive a detailed proposal with clear deliverables, timeline, and transparent pricing.</div>
               <div class="pstep-tag">✦ Within 48 hours</div>
             </div>
           </div>
           <div class="pstep">
             <div class="pstep-n">03</div>
             <div>
-              <div class="pstep-title">Build</div>
-              <div class="pstep-desc">Weekly check-ins and shared previews to ensure we're always aligned.</div>
+              <div class="pstep-title">Design & Build</div>
+              <div class="pstep-desc">Our team gets to work. Weekly check-ins, shared previews, and feedback loops ensure we're always aligned.</div>
               <div class="pstep-tag">✦ 2–6 weeks</div>
             </div>
           </div>
           <div class="pstep">
             <div class="pstep-n">04</div>
             <div>
-              <div class="pstep-title">Launch</div>
-              <div class="pstep-desc">Go live with monitoring, optimization, and ongoing support to ensure growth.</div>
+              <div class="pstep-title">Launch & Grow</div>
+              <div class="pstep-desc">We launch, monitor, and continue to optimize. Most clients stick with us long-term for ongoing growth.</div>
               <div class="pstep-tag">✦ Ongoing support available</div>
             </div>
           </div>
@@ -2138,7 +2068,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   </section>
 
   <!-- PHILOSOPHY -->
-  <section class="phi-s" data-animate="fade-up">
+  <section class="phi-s">
     <div class="wrap">
       <div class="section-header rv">
         <div>
@@ -2147,17 +2077,17 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
         </div>
       </div>
       <div class="phi-grid rv d1">
-        <div class="phi-card" data-animate="fade-up">
+        <div class="phi-card">
           <span class="phi-num">01</span>
           <div class="phi-title">Craft over output</div>
           <p class="phi-desc">We'd rather ship one exceptional project than ten forgettable ones. Every pixel, every interaction is intentional and considered.</p>
         </div>
-        <div class="phi-card" data-animate="fade-up" class="delay-1">
+        <div class="phi-card">
           <span class="phi-num">02</span>
           <div class="phi-title">Results, not aesthetics</div>
           <p class="phi-desc">Beautiful things should also work. We design for conversion, retention, and growth — not just awards and screenshots.</p>
         </div>
-        <div class="phi-card" data-animate="fade-up" class="delay-2">
+        <div class="phi-card">
           <span class="phi-num">03</span>
           <div class="phi-title">Technology as leverage</div>
           <p class="phi-desc">AI isn't a buzzword here. It's a tool we deploy strategically to give clients an unfair advantage over their competition.</p>
@@ -2167,17 +2097,17 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="testi-s" data-animate="scale-in">
+  <section class="testi-s">
     <div class="wrap">
       <div class="section-header rv">
         <div>
-          <div class="chip" style="margin-bottom:12px;">Testimonials</div>
-          <h2 class="h-lg">Trusted by <em>businesses like yours.</em></h2>
+          <div class="chip" style="margin-bottom:12px;">Client Love</div>
+          <h2 class="h-lg">What they <em>say.</em></h2>
         </div>
         <button class="btn-link" onclick="go('work',null)">See Case Studies →</button>
       </div>
       <div class="testi-grid">
-        <div class="testi-card rv" data-animate="slide-right">
+        <div class="testi-card rv">
           <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
           <div class="testi-quote">Automora rebuilt our entire online presence in 3 weeks. Traffic tripled and our lead quality improved dramatically. These guys are the real deal.</div>
           <div class="testi-author">
@@ -2188,7 +2118,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
             </div>
           </div>
         </div>
-        <div class="testi-card rv d1" data-animate="slide-right" class="delay-1">
+        <div class="testi-card rv d1">
           <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
           <div class="testi-quote">The WhatsApp bot they built handles over 800 customer queries a day. Our team can finally focus on what actually matters. ROI in 2 months.</div>
           <div class="testi-author">
@@ -2199,7 +2129,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
             </div>
           </div>
         </div>
-        <div class="testi-card rv d2" data-animate="slide-right" class="delay-2">
+        <div class="testi-card rv d2">
           <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
           <div class="testi-quote">Page 1 rankings in under 90 days for our most competitive keywords. Automora's SEO team is simply world-class — data-driven and transparent.</div>
           <div class="testi-author">
@@ -2215,7 +2145,7 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   </section>
 
   <!-- CTA -->
-  <section class="cta-s" data-animate="blur-in">
+  <section class="cta-s">
     <div class="cta-glow"></div>
     <div class="cta-rings">
       <div class="cta-ring cr1"></div>
@@ -2223,12 +2153,12 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
       <div class="cta-ring cr3"></div>
     </div>
     <div class="cta-inner rv">
-      <div class="chip" style="margin-bottom:24px;justify-content:center;">Ready to Grow?</div>
-      <h2 class="h-xl" style="margin-bottom:28px;">Let's Build Something<br>That Actually <em>Grows</em><br>Your Business</h2>
-      <p class="body-t" style="max-width:520px;margin:0 auto 48px;">Book a free 30-minute strategy call. No pressure, no hard sell — just an honest conversation about how we can help you scale.</p>
+      <div class="chip" style="margin-bottom:24px;justify-content:center;">Ready?</div>
+      <h2 class="h-xl" style="margin-bottom:28px;">Let's build<br><em>something</em><br>remarkable.</h2>
+      <p class="body-t" style="max-width:440px;margin:0 auto 48px;">A 30-minute call is all it takes to start. No pressure, no hard sell — just an honest conversation about your goals.</p>
       <div style="display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;">
-        <button class="btn-v" data-magnetic onclick="go('contact',null)" style="font-size:13px;padding:15px 32px;">Book a Free Strategy Call ↗</button>
-        <button class="btn-o" onclick="go('work',null)">View Case Studies</button>
+        <button class="btn-v" onclick="go('contact',null)" style="font-size:13px;padding:15px 32px;">Book a Free Strategy Call ↗</button>
+        <button class="btn-o" onclick="go('work',null)">See Our Work</button>
       </div>
     </div>
   </section>
@@ -2763,25 +2693,17 @@ bindHover();
 
 /* ── ANIMATED COUNTER ── */
 function animateCounter(el){
-  const target=parseFloat(el.dataset.target);
-  const isDecimal=el.dataset.target.includes('.');
+  const target=parseInt(el.dataset.target);
   const suffix=el.dataset.suffix||'';
   const duration=1800;
   const start=performance.now();
   function update(now){
     const p=Math.min((now-start)/duration,1);
     const ease=1-Math.pow(1-p,4);
-    let val=ease*target;
-    if(isDecimal){
-      val=val.toFixed(2);
-      // avoid showing 100.00 during ease, clamp
-      if(parseFloat(val) > target) val=target.toFixed(2);
-    } else {
-      val=Math.round(val);
-    }
+    const val=Math.round(ease*target);
     el.textContent=val+suffix;
     if(p<1)requestAnimationFrame(update);
-    else el.textContent=(isDecimal?target.toFixed(2):target)+suffix;
+    else el.textContent=target+suffix;
   }
   requestAnimationFrame(update);
 }
@@ -2839,9 +2761,5 @@ document.addEventListener('mousemove',e=>{
   if(blob2)blob2.style.transform=`translate(${-xp*.6}px,${-yp*.6}px)`;
 });
 </script>
-
-<!-- Motion System -->
-<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-<script src="/js/motion.js"></script>
 </body>
 </html>

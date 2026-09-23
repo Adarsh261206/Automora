@@ -1616,6 +1616,20 @@ footer{background:var(--ink2);border-top:1px solid var(--wire);padding:80px 0 40
   .spin-orb{width:60px;height:60px;}
   .spin-orb span{font-size:24px;}
 }
+@media(max-width:1024px){
+  .bento-grid .bc[style]{grid-column:span 12 !important;aspect-ratio:16/10 !important;}
+  .full-bento .bc[style]{grid-column:span 12 !important;aspect-ratio:16/10 !important;}
+}
+@media(max-width:640px){
+  .bento-grid,.full-bento{gap:12px !important;}
+  .bento-grid .bc,.full-bento .bc{min-height:240px;aspect-ratio:4/3 !important;}
+  .bc img{object-position:top center !important;}
+  .bc-info{padding:20px 16px !important;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.45) 45%,transparent 100%) !important;}
+  #previewModal{padding:12px !important;}
+  #previewModal > div{width:100% !important;height:88vh !important;border-radius:16px !important;}
+  #previewModal #previewUrl{font-size:9px !important;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  #previewModal #previewOpen{padding:7px 12px !important;font-size:10px !important;}
+}
 </style>
 </head>
 <body>

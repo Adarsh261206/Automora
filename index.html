@@ -2817,23 +2817,33 @@ function openPreview(url){
   const loader=document.getElementById('previewLoader');
   const urlEl=document.getElementById('previewUrl');
   const open=document.getElementById('previewOpen');
+  const blockedSites=['uvacasgifting.com','mistycascades.com']; // X-Frame DENY/SAMEORIGIN
+  const isBlocked=blockedSites.some(d=>url.includes(d));
   urlEl.textContent=url;
   open.href=url;
-  frame.style.display='block';
-  fallback.style.display='none';
-  loader.style.display='flex';
-  loader.textContent='Loading preview…';
-  frame.src=url;
   modal.classList.add('show');
   modal.style.display='flex';
   document.body.style.overflow='hidden';
+  // Always show screenshot first – avoids "refused to connect" flash
+  fallback.src='https://s.wordpress.com/mshots/v1/'+encodeURIComponent(url)+'?w=1280';
+  fallback.style.display='block';
+  frame.style.display='none';
+  loader.style.display='none';
+  if(isBlocked){
+    // known blocked – keep screenshot, don't try iframe
+    return;
+  }
+  // For non-blocked sites, try live iframe in background
+  loader.style.display='flex';
+  loader.textContent='Loading live preview…';
+  frame.style.display='block';
+  fallback.style.display='none';
+  frame.src=url;
   let timedOut=false;
   const to=setTimeout(()=>{
-    // if still loading, show fallback screenshot
     if(loader.style.display!=='none'){
       timedOut=true;
       frame.style.display='none';
-      fallback.src='https://s.wordpress.com/mshots/v1/'+encodeURIComponent(url)+'?w=1280';
       fallback.style.display='block';
       loader.style.display='none';
     }
@@ -2842,11 +2852,20 @@ function openPreview(url){
     if(timedOut) return;
     clearTimeout(to);
     loader.style.display='none';
+    // if iframe shows "refused" chrome page, it still fires onload – check via try
+    try{
+      const doc=frame.contentDocument||frame.contentWindow.document;
+      if(doc&&doc.body&&doc.body.innerHTML.includes('refused')){
+        throw new Error('blocked');
+      }
+    }catch(e){
+      frame.style.display='none';
+      fallback.style.display='block';
+    }
   };
   frame.onerror=()=>{
     clearTimeout(to);
     frame.style.display='none';
-    fallback.src='https://s.wordpress.com/mshots/v1/'+encodeURIComponent(url)+'?w=1280';
     fallback.style.display='block';
     loader.style.display='none';
   };

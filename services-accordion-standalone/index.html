@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Accordion - Standalone</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Accordion CSS -->
+  <link rel="stylesheet" href="accordion.css">
+</head>
+<body>
+
+  <!-- SERVICES ACCORDION SECTION -->
+  <section class="services-accordion-section">
+    
+    <!-- Background -->
+    <div class="section-bg">
+      <div class="bg-gradient"></div>
+      <div class="bg-pattern"></div>
+    </div>
+
+    <div class="accordion-container">
+      
+      <!-- Header -->
+      <div class="accordion-header">
+        <div class="header-left">
+          <div class="section-chip">What We Do</div>
+          <h2 class="section-title">Our <em>services.</em></h2>
+        </div>
+        <p class="header-description">
+          Everything a modern brand needs to grow digitally — from stunning web presence to intelligent automation.
+        </p>
+      </div>
+
+      <!-- Accordion Items -->
+      <div class="accordion-list">
+        
+        <!-- Service 1: Web Design & Development -->
+        <div class="accordion-item open" id="service-1">
+          <div class="accordion-row" onclick="toggleAccordion('service-1')">
+            <div class="service-number">01</div>
+            <div class="service-name">Web Design & Development</div>
+            <div class="service-tags">
+              <span class="service-tag">Design</span>
+              <span class="service-tag">Dev</span>
+            </div>
+            <div class="accordion-toggle">+</div>
+          </div>
+          
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <!-- Left: Description -->
+              <div class="content-left">
+                <p class="service-description">
+                  We build bespoke websites that don't just look great — they convert visitors into customers. From landing pages to full-scale web apps, every pixel is intentional.
+                </p>
+                <ul class="service-features">
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Custom UI/UX Design</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>3D & Motion Experiences</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>E-Commerce & Web Apps</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Performance Optimized</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Mobile-First & Responsive</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <!-- Right: Visual -->
+              <div class="content-right">
+                <div class="browser-mockup">
+                  <div class="browser-bar">
+                    <div class="browser-dot" style="background:#FF5F57;"></div>
+                    <div class="browser-dot" style="background:#FFBD2E;"></div>
+                    <div class="browser-dot" style="background:#28CA41;"></div>
+                  </div>
+                  <div class="browser-content">
+                    <div class="mockup-hero"></div>
+                    <div class="mockup-cards">
+                      <div class="mockup-card"></div>
+                      <div class="mockup-card"></div>
+                      <div class="mockup-card"></div>
+                    </div>
+                    <div class="mockup-line" style="width:80%;"></div>
+                    <div class="mockup-line" style="width:60%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: AI Chatbot Automation -->
+        <div class="accordion-item" id="service-2">
+          <div class="accordion-row" onclick="toggleAccordion('service-2')">
+            <div class="service-number">02</div>
+            <div class="service-name">AI Chatbot Automation</div>
+            <div class="service-tags">
+              <span class="service-tag">AI</span>
+              <span class="service-tag">Bots</span>
+            </div>
+            <div class="accordion-toggle">+</div>
+          </div>
+          
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <div class="content-left">
+                <p class="service-description">
+                  Deploy intelligent chatbots that qualify leads, answer queries, and book appointments — 24/7, without human intervention. Built on GPT-4 and custom-trained on your business.
+                </p>
+                <ul class="service-features">
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>GPT-4 Powered Conversations</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Lead Qualification & CRM Sync</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>WhatsApp & Web Integration</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>24/7 Automated Support</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="content-right">
+                <div class="chat-mockup">
+                  <div class="chat-header">
+                    <div class="chat-avatar">A</div>
+                    <div>
+                      <div class="chat-name">Automora Bot</div>
+                      <div class="chat-status">● ONLINE</div>
+                    </div>
+                  </div>
+                  <div class="chat-messages">
+                    <div class="chat-message bot">Hi! I'm here to help. What can I do for you today?</div>
+                    <div class="chat-message user">I need pricing info</div>
+                    <div class="chat-message bot">Sure! Let me get you our latest packages. What's your business size?</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: SEO & Digital Growth -->
+        <div class="accordion-item" id="service-3">
+          <div class="accordion-row" onclick="toggleAccordion('service-3')">
+            <div class="service-number">03</div>
+            <div class="service-name">SEO & Digital Growth</div>
+            <div class="service-tags">
+              <span class="service-tag">SEO</span>
+              <span class="service-tag">Growth</span>
+            </div>
+            <div class="accordion-toggle">+</div>
+          </div>
+          
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <div class="content-left">
+                <p class="service-description">
+                  Rank on Google's first page with data-driven SEO strategies. We combine technical optimization, content strategy, and link building to drive sustainable organic growth.
+                </p>
+                <ul class="service-features">
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Technical SEO Audits</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Content Strategy & Creation</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Link Building & Authority</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Analytics & Reporting</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="content-right">
+                <div class="seo-mockup">
+                  <div class="seo-chart">
+                    <div class="chart-bar" style="height: 30%;"></div>
+                    <div class="chart-bar" style="height: 50%;"></div>
+                    <div class="chart-bar" style="height: 70%;"></div>
+                    <div class="chart-bar" style="height: 85%;"></div>
+                    <div class="chart-bar" style="height: 100%;"></div>
+                  </div>
+                  <div class="seo-stats">
+                    <div class="stat-item">
+                      <div class="stat-value">+240%</div>
+                      <div class="stat-label">Traffic Growth</div>
+                    </div>
+                    <div class="stat-item">
+                      <div class="stat-value">#1</div>
+                      <div class="stat-label">Rankings</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: WhatsApp Business Solutions -->
+        <div class="accordion-item" id="service-4">
+          <div class="accordion-row" onclick="toggleAccordion('service-4')">
+            <div class="service-number">04</div>
+            <div class="service-name">WhatsApp Business Solutions</div>
+            <div class="service-tags">
+              <span class="service-tag">WhatsApp</span>
+              <span class="service-tag">CRM</span>
+            </div>
+            <div class="accordion-toggle">+</div>
+          </div>
+          
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <div class="content-left">
+                <p class="service-description">
+                  Scale customer communication with WhatsApp Business API. Automate responses, manage inquiries, and close deals directly through WhatsApp.
+                </p>
+                <ul class="service-features">
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>WhatsApp Business API Setup</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Automated Message Flows</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>CRM Integration</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Broadcast & Campaigns</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="content-right">
+                <div class="whatsapp-mockup">
+                  <div class="wa-header">
+                    <div class="wa-icon">📱</div>
+                    <div class="wa-title">WhatsApp Business</div>
+                  </div>
+                  <div class="wa-body">
+                    <div class="wa-stat">
+                      <div class="wa-number">800+</div>
+                      <div class="wa-label">Messages/Day</div>
+                    </div>
+                    <div class="wa-stat">
+                      <div class="wa-number">95%</div>
+                      <div class="wa-label">Response Rate</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- JavaScript -->
+  <script src="accordion.js"></script>
+
+</body>
+</html>

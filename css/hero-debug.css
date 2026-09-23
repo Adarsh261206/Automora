@@ -1,0 +1,35 @@
+/* ═══════════════════════════════════════════════════════════
+   DEBUG: Force hero-rebuilt to be visible
+   ═══════════════════════════════════════════════════════════ */
+
+.hero-rebuilt {
+  display: flex !important;
+  min-height: 100vh !important;
+  background: #08080A !important;
+  position: relative !important;
+  border: 3px solid red !important; /* DEBUG BORDER */
+}
+
+.hero-container {
+  border: 2px solid blue !important; /* DEBUG BORDER */
+  width: 100% !important;
+}
+
+.hero-left {
+  border: 2px solid green !important; /* DEBUG BORDER */
+}
+
+.hero-right {
+  border: 2px solid yellow !important; /* DEBUG BORDER */
+}
+
+.hero-title {
+  color: white !important;
+  font-size: 64px !important;
+}
+
+.hero-badge {
+  background: rgba(212, 255, 0, 0.2) !important;
+  color: #D4FF00 !important;
+  display: inline-flex !important;
+}
